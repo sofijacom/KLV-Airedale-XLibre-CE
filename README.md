@@ -2,6 +2,7 @@
 
 <img width="750" height="422" alt="Screenshot-20251112T130742" src="https://github.com/user-attachments/assets/dbc5fe0c-fab7-4bb0-b395-5304d01a4503" />
 
+---
 
 - script "iso_grubconfig" which will create boot lines for "grub.cfg" in a file named "iso_grub_config.txt"
 - run the script in the location where the ISO is located.
