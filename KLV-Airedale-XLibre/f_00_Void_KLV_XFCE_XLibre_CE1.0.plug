@@ -190,7 +190,7 @@ touch ~/.bash_profile
 cat <<'AUTOLOGIN' > /etc/profile.d/autologin.sh
 # autologin on tty1
 if [ -z "$DISPLAY" ] && [ "$(fgconsole)" -eq 1 ]; then
- startx  # remove the exec if you want back to tty1 on exit X
+ exec startx  # remove the exec if you want back to tty1 on exit X
 
 fi
 AUTOLOGIN
@@ -589,7 +589,7 @@ xbps-install -y --repository=Build/ poorercputemp-0.2_1
 xbps-install -y --repository=Build/ dcontrol-2.0_1
 
 # Install KLV-calendar
-KLV-calendar-2.5_1.x86_64.xbps
+xbps-install -y --repository=Build/ KLV-calendar-2.5_1
 
 # Set execution permissions recursivly for binaries and scripts
 chmod +x -R /usr/local/bin
